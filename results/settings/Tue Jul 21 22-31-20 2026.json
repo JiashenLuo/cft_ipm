@@ -1,0 +1,40 @@
+{
+  "batch_size": 4096,
+  "lr": 0.001,
+  "epoches": 1500,
+  "test_epoch": 5,
+  "topk": 40,
+  "device": "cpu",
+  "model_name": "cft",
+  "data_name": "ml_100k",
+  "neg_c_map": {
+    "ml_100k": 5,
+    "ml_1m": 10,
+    "douban_book": 50,
+    "yelp2018": 50,
+    "gowalla": 50
+  },
+  "path_num_map": {
+    "ml_100k": 60,
+    "ml_1m": 80,
+    "douban_book": 40,
+    "yelp2018": 16,
+    "gowalla": 16
+  },
+  "model_arc_map": {
+    "ml_100k": " ",
+    "ml_1m": "spe sse",
+    "douban_book": "sse",
+    "yelp2018": "sse",
+    "gowalla": " "
+  },
+  "embs_dim": 64,
+  "layer_num": 1,
+  "neg_c": 5,
+  "walk_len": 4,
+  "path_num": 60,
+  "with_neg_edges": true,
+  "model_arc": " ",
+  "sse_dim": 64,
+  "sse_type": "R"
+}
